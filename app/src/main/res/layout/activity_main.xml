@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Linear_Layout"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Image_View_h1"
+            android:background="@drawable/heart2"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Image_View_h2"
+            android:layout_toRightOf="@+id/Image_View_h1"
+            android:background="@drawable/heart2"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Image_View_h3"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/Image_View_h2"
+            android:background="@drawable/heart2"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Image_View_h4"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/Image_View_h3"
+            android:background="@drawable/heart2"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Image_View_h5"
+            android:layout_toRightOf="@+id/Image_View_h4"
+            android:background="@drawable/heart2"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Text_View_feladat"
+        android:text="Találd ki a számot!!"
+        android:textSize="44dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Linear_Layout"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Button_plus"
+        android:text="+"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/holo_blue_dark"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Text_View_szam"
+        android:text="0"
+        android:textSize="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Button_plus"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Button_minus"
+        android:text="-"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Text_View_szam"
+        android:background="@android:color/holo_green_dark"
+        />
+
+    <Button
+        android:id="@+id/Button_kuld"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_red_dark"
+        android:text="Küldés"
+        android:textSize="30dp" />
+
+
+
+
+
+</RelativeLayout>
